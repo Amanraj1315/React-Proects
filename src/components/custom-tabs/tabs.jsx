@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Tabs({ tabsContent, onChange }) {
+function Tabs({ tabsContent, onChange }) {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
 
   function handleOnClick(getCurrentIndex) {
@@ -27,3 +27,5 @@ export default function Tabs({ tabsContent, onChange }) {
     </div>
   );
 }
+
+export default Tabs;

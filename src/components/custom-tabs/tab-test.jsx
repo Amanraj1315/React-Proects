@@ -5,7 +5,7 @@ function RandomComponent() {
   return <h1>Some random content</h1>;
 }
 
-export default function TabTest() {
+function TabTest() {
   const tabs = [
     {
       label: "Tab 1",
@@ -27,3 +27,5 @@ export default function TabTest() {
 
   return <Tabs tabsContent={tabs} onChange={handleChange} />;
 }
+
+export default TabTest;
