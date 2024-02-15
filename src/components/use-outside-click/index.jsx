@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function useOutsideClick(ref, handler) {
+function useOutsideClick(ref, handler) {
   useEffect(() => {
     function listener(event) {
       if (!ref.current || ref.current.contains(event.target)) {
@@ -19,3 +19,4 @@ export default function useOutsideClick(ref, handler) {
     };
   }, [handler, ref]);
 }
+export default useOutsideClick ;

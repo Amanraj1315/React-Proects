@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import useOutsideClick from ".";
 
-export default function UseOnclickOutsideTest() {
+function UseOnclickOutsideTest() {
   const [showContent, setShowContent] = useState(false);
   const ref = useRef();
   useOutsideClick(ref, () => setShowContent(false));
@@ -22,3 +22,5 @@ export default function UseOnclickOutsideTest() {
     </div>
   );
 }
+
+export default UseOnclickOutsideTest ;
